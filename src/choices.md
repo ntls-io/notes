@@ -5,7 +5,7 @@
   Looking at <https://github.com/ntls-io/ntls-sgx-service>,
   the password hashing algorithm used is __Argon2id__,
   which is the default (of the 3 variants) provided by [argon2 crate].
-  See the OWASP [Password Storage Cheat Sheet] for what makes this is good choice.
+  See the OWASP [Password Storage Cheat Sheet] for what makes this a good choice.
 
 - Data hashing
 
