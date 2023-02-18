@@ -1,5 +1,5 @@
 # Summary
 
-- [intro](index.md)
+- [setup](setup.md)
 - [choices](choices.md)
 - [problems](problems.md)
