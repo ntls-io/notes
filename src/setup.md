@@ -1,5 +1,3 @@
-## Nautilus notes
-
 To build these docs:
 install __mdBook__ from this [download page]
 (unless you have a recent Rust toolchain, in which case you would just `cargo install mdbook`),
