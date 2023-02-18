@@ -1,5 +1,5 @@
-To build these docs:
-install __mdBook__ from this [download page]
+To build these docs,
+install __mdBook__ from [its download page]
 (unless you have a recent Rust toolchain, in which case you would just `cargo install mdbook`),
 and run this command:
 
@@ -22,7 +22,7 @@ Following are additional (and optional) executables to install:
 - `mdbook-admonish` for displaying pretty side content
   ([download page][admonish-download-page])
 
-[download page]: https://github.com/rust-lang/mdBook/releases/latest
+[its download page]: https://github.com/rust-lang/mdBook/releases/latest
 [mdBook docs]: https://rust-lang.github.io/mdBook
 [Mermaid diagrams]: https://mermaid.js.org
 [mermaid-download-page]: https://github.com/badboy/mdbook-mermaid/releases/latest
