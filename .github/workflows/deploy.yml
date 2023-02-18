@@ -17,25 +17,25 @@ jobs:
         mkdir mdbook
         name=mdbook
         version=v0.4.27
-        curl --silent --show-error --location https://github.com/rust-lang/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
+        curl --silent --show-error --location https://github.com/rust-lang/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar --extract --gunzip --directory mdbook
         echo `pwd`/$name >> $GITHUB_PATH
     - name: Install mdbook-mermaid
       run: |
         name=mdbook-mermaid
         version=v0.12.6
-        curl --silent --show-error --location https://github.com/badboy/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
+        curl --silent --show-error --location https://github.com/badboy/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar --extract --gunzip --directory mdbook
         echo `pwd`/$name >> $GITHUB_PATH
     - name: Install mdbook-toc
       run: |
         name=mdbook-toc
         version=0.11.2
-        curl --silent --show-error --location https://github.com/badboy/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
+        curl --silent --show-error --location https://github.com/badboy/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar --extract --gunzip --directory mdbook
         echo `pwd`/$name >> $GITHUB_PATH
     - name: Install mdbook-admonish
       run: |
         name=mdbook-admonish
         version=v1.8.0
-        curl --silent --show-error --location https://github.com/tommilligan/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar -xz --directory=./mdbook
+        curl --silent --show-error --location https://github.com/tommilligan/$name/releases/download/$version/$name-$version-x86_64-unknown-linux-gnu.tar.gz | tar --extract --gunzip --directory mdbook
         echo `pwd`/$name >> $GITHUB_PATH
     - name: Deploy GitHub Pages
       run: |
