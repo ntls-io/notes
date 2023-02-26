@@ -1,6 +1,6 @@
 # choices
 
-- Password hasing
+- Password hashing
 
   Looking at <https://github.com/ntls-io/ntls-sgx-service>,
   the password hashing algorithm used is __Argon2id__,
