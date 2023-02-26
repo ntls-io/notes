@@ -13,10 +13,10 @@
   the data hashing algorithm used is __BLAKE3__,
   which is chosen for [its speed].
 
-- Data encryption
+- Data encryption/decryption
 
   Looking at <https://github.com/ntls-io/ntls-sgx-service>,
-  the encryption algorithm chosen is __ChaCha20-Poly1305__,
+  the cryptographic algorithm chosen for data sealing/unsealing is __ChaCha20-Poly1305__,
   due to it being state-of-the-art.
   It is accessed through [ring_compat] crate.
 
