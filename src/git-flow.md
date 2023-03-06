@@ -19,7 +19,7 @@ git rebase --autostash --interactive
 
 ## explanation
 
-It is more easy to do code review code and archeology when...
+It is more easy to do code review code and archaeology when...
 - History is clean
 - Each commit is self-contained
 - There are no merge commits
