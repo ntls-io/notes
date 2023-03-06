@@ -57,3 +57,26 @@ then use the command to fuse it onto that older commit.
   This is something that can be disabled using GitHub settings of the repo.
   Squashing results in lost history,
   making it more hard to do archaeology.
+
+## visualising it
+
+Following is an incomplete flow of above:
+
+```mermaid
+graph TD
+  %% simple flow
+  pull[<b>be sure you are current</b> <br> git pull]
+  --> branch[<b>create branch</b> <br> git checkout -b $feature]
+  --> impl[<b>implement feature</b>]
+  --> initial-push[<b>push branch to upstream</b> <br> git push --set-upstream origin $feature]
+  --> pr[<b>create PR</b>]
+
+  %% not-so-simple flow
+  get[<b>get those changes</b> <br> git fetch]
+  --> incorporate[<b>incorporate those changes into current branch</b> <br> git rebase origin/main]
+  --> push[git push]
+  --> pr
+
+  %% decision
+  initial-push -- upstream got changes --> get
+```
