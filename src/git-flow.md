@@ -16,6 +16,7 @@ git rebase origin/main
 # finish implementing feature
 git push
 git rebase --autostash --interactive
+git push --force-with-lease
 # create PR
 ```
 
@@ -55,6 +56,14 @@ This lets you re-order (unpushed) commits as appropriate.
 A typical change is fixing something that should ideally have been part on an older commit,
 in which case you would do a "fix" commit,
 then use the command to fuse it onto that older commit.
+
+### `git push --force-with-lease`
+
+This is a more safe version of `git push --force`,
+which errors if other commits,
+possibly by other commiters,
+rely on commits that are already pushed
+(probably... man page requires more brain cells than I got at the moment).
 
 ## some final thoughts
 
