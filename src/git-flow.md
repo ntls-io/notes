@@ -31,6 +31,17 @@ The summary above shows the sort of git flow that helps with such hygiene.
 What this also means is avoiding merging any branch to any other,
 typically main to feature branch, and later, feature to main branch.
 
+```admonish info
+The term _merge_ can be confusing, for it can mean 2 things:
+
+- A commit that solely indicates that a merge took place
+- Adding changes from one branch to another
+
+The former is part of what is being discouraged here,
+and the latter is terminology used by GitHub,
+even though there actually is no merge commit.
+```
+
 ### `git rebase origin/main`
 
 This command re-orders commits in current branch on top of main branch,
