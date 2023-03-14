@@ -27,7 +27,7 @@ It is more easy to do code review code and archaeology when...
 - Each commit is self-contained
 - There are no merge commits
 
-The summary above shows the sort of git flow that helps with such hygiene.
+[The summary](#summary) above shows the sort of git flow that helps with such hygiene.
 
 What this also means is avoiding merging any branch to any other,
 typically main to feature branch, and later, feature to main branch.
